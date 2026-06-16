@@ -1,0 +1,588 @@
+/* ============================================================================
+   1. GLOBAL RESET & BASE STYLES
+   ============================================================================ */
+:root {
+    --primary-color: #0066cc;
+    --primary-hover: #0052a3;
+    --bg-dark: #0f172a;
+    --text-main: #334155;
+    --text-heading: #1e293b;
+    --bg-light: #f8fafc;
+    --border-color: #e2e8f0;
+    --accent-success: #10b981;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================================================
+   1a. TOP NAVIGATION BAR
+   ============================================================================ */
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg-dark);
+    border-bottom: 1px solid #1e293b;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topnav .logo {
+    font-weight: 800;
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+.topnav .nav-links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.topnav .nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+    white-space: nowrap;
+}
+
+.topnav .nav-links a:hover,
+.topnav .nav-links a.active {
+    color: #ffffff;
+    background: rgba(255,255,255,0.08);
+}
+
+@media (max-width: 600px) {
+    .topnav .logo { font-size: 0.85rem; }
+    .topnav .nav-links a { font-size: 0.75rem; padding: 4px 8px; }
+}
+
+/* ============================================================================
+   2. TYPOGRAPHY & HEADINGS
+   ============================================================================ */
+h1, h2, h3 {
+    color: var(--text-heading);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.25rem; letter-spacing: -0.025em; }
+h2 { font-size: 1.5rem; margin-top: 1.5rem; }
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+/* ============================================================================
+   3. LAYOUT FRAMEWORK (DASHBOARD GRID)
+   ============================================================================ */
+.header-banner {
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #1e293b 100%);
+    color: #ffffff;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-banner-compact {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.header-banner h1 {
+    color: #ffffff;
+}
+
+.header-banner p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 7fr 4fr; /* Main App vs Sidebar Ads/Context */
+    }
+}
+
+/* ============================================================================
+   4. INTERACTIVE MODULE COMPONENTS (The Calculator Shell)
+   ============================================================================ */
+.card-panel {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+}
+
+.input-group {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-heading);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: var(--text-heading);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="number"]:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+}
+
+/* ============================================================================
+   5. DYNAMIC CALCULATION OUTPUT AREA (High Engagement Zone)
+   ============================================================================ */
+.output-hero {
+    background-color: #f0fdf4; /* Light clean green */
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.output-hero .label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #166534;
+    font-weight: 600;
+}
+
+.output-hero .value {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #14532d;
+    margin: 5px 0;
+}
+
+/* ============================================================================
+   6. DIRECTORY LINKS GRID (Programmatic UI Navigation)
+   ============================================================================ */
+.directory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.directory-item {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.directory-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+}
+
+/* ============================================================================
+   7. ADVERTISING PLACEMENT PLACEHOLDERS (High Refresh Metric Engine)
+   ============================================================================ */
+.ad-slot-sidebar {
+    background-color: #edf2f7;
+    border: 2px dashed #cbd5e1;
+    border-radius: 8px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+    padding: 20px;
+}
+
+/* ============================================================================
+   8. UTILITY FOOTER COMPLIANCE LINKBAR
+   ============================================================================ */
+footer {
+    margin-top: 80px;
+    border-top: 1px solid var(--border-color);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+footer .links {
+    margin-bottom: 10px;
+}
+
+footer .links a {
+    margin: 0 12px;
+    color: #64748b;
+}
+
+footer .links a:hover {
+    color: var(--primary-color);
+}
+
+/* ============================================================================
+   9. UTILITY PAGES (Legal, 404, Contact)
+   ============================================================================ */
+.legal-page {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.legal-page h2 {
+    margin-top: 2rem;
+}
+
+.legal-page p,
+.legal-page li {
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+.legal-page ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.legal-page li {
+    margin-bottom: 8px;
+}
+
+.zero-data-card {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 20px 0;
+    border-left: 4px solid var(--accent-success);
+}
+
+.zero-data-card strong {
+    color: #166534;
+}
+
+.disclaimer-box {
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff5f5;
+    color: #991b1b;
+    font-weight: 600;
+    margin: 20px 0;
+    border-left: 4px solid #ef4444;
+}
+
+/* ============================================================================
+   10. 404 PAGE
+   ============================================================================ */
+.error-404-container {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.error-404-code {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.error-404-message {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    margin-bottom: 30px;
+}
+
+.error-404-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 14px 28px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    color: #fff;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-main);
+    transition: border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* ============================================================================
+   11. NOSCRIPT WARNING
+   ============================================================================ */
+.noscript-warning {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff5f5;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    text-align: center;
+    color: #991b1b;
+}
+
+/* ============================================================================
+   12. FORM PAGE (Contact)
+   ============================================================================ */
+.form-page-card {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-heading);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--text-heading);
+    box-sizing: border-box;
+    transition: border-color 0.15s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+}
+
+/* ============================================================================
+   13. BACK NAVIGATION
+   ============================================================================ */
+.back-nav {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.back-nav:hover {
+    color: #ffffff;
+}
+
+/* HIDE AD PLACEHOLDERS UNTIL SITE HAS TRAFFIC */
+.ad-placeholder, .ad-slot-sidebar { display: none; }
+
+/* ============================================================================
+   14. COMPARISON TABLES (alternatives.html)
+   ============================================================================ */
+.comparison-section-title {
+    font-size: 1.75rem;
+    margin: 40px 0 20px 0;
+    color: #111;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+}
+
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 600px;
+}
+
+.table-responsive th,
+.table-responsive td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table-responsive th {
+    background-color: #f1f3f5;
+    font-weight: 700;
+    color: #111;
+}
+
+.table-responsive tr:last-child td {
+    border-bottom: none;
+}
+
+.table-responsive .our-suite-row {
+    background-color: rgba(0, 102, 204, 0.03);
+    font-weight: 600;
+}
+
+.check {
+    color: var(--accent-success);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cross {
+    color: #c62828;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.badge-premium {
+    background-color: rgba(0, 102, 204, 0.1);
+    color: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.ad-placeholder {
+    background: #ebebeb;
+    border: 2px dashed #bbb;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-box,
+.cta-box-gradient {
+    text-align: center;
+    background: linear-gradient(135deg, #0066cc, #004499);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 60px;
+}
+
+.cta-box-gradient h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.cta-box-gradient .cta-btn {
+    display: inline-block;
+    background: #fff;
+    color: var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.cta-box-gradient .cta-btn:hover {
+    background: #f1f3f5;
+}
