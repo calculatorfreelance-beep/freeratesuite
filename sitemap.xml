@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-    <loc>https://freeratesuit.com/alternatives.html</loc>
+    <loc>https://freeratesuite.com/alternatives.html</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     </url>
     <!-- CORE PAGES -->
-    <url><loc>https://freeratesuit.com/</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-    <url><loc>https://freeratesuit.com/directory.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://freeratesuit.com/privacy-policy.html</loc><lastmod>2026-06-15</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-    <url><loc>https://freeratesuit.com/terms.html</loc><lastmod>2026-06-15</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-    <url><loc>https://freeratesuit.com/contact.html</loc><lastmod>2026-06-15</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-    <url><loc>https://freeratesuit.com/404.html</loc><lastmod>2026-06-15</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
+    <url><loc>https://freeratesuite.com/</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+    <url><loc>https://freeratesuite.com/directory.html</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://freeratesuite.com/privacy-policy.html</loc><lastmod>2026-06-15</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+    <url><loc>https://freeratesuite.com/terms.html</loc><lastmod>2026-06-15</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+    <url><loc>https://freeratesuite.com/contact.html</loc><lastmod>2026-06-15</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+    <url><loc>https://freeratesuite.com/404.html</loc><lastmod>2026-06-15</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
 
     <!-- GUIDE PAGES -->
-    <url><loc>https://freeratesuit.com/guides/index.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://freeratesuit.com/guides/rate-calculator-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://freeratesuit.com/guides/tax-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://freeratesuit.com/guides/rate-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://freeratesuit.com/guides/freelance-vs-salary.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://freeratesuit.com/guides/freelance-expenses-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://freeratesuit.com/guides/billable-hours-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://freeratesuit.com/guides/web-developer-rates-2026.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://freeratesuite.com/guides/index.html</loc><lastmod>2026-06-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://freeratesuite.com/guides/rate-calculator-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://freeratesuite.com/guides/tax-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://freeratesuite.com/guides/rate-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://freeratesuite.com/guides/freelance-vs-salary.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://freeratesuite.com/guides/freelance-expenses-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://freeratesuite.com/guides/billable-hours-guide.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://freeratesuite.com/guides/web-developer-rates-2026.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
     <!-- ACTIVE JOB PAGES (LIVE) -->
-    <url><loc>https://freeratesuit.com/?job=web-developer</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=graphic-designer</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=copywriter</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=virtual-assistant</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=ui-ux-designer</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=seo-specialist</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=video-editor</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=social-media-manager</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=bookkeeper</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=content-writer</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=frontend-developer</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://freeratesuit.com/?job=project-manager</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=web-developer</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=graphic-designer</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=copywriter</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=virtual-assistant</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=ui-ux-designer</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=seo-specialist</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=video-editor</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=social-media-manager</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=bookkeeper</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=content-writer</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=frontend-developer</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://freeratesuite.com/?job=project-manager</loc><lastmod>2026-06-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
     <!-- FUTURE BATCHES: Add to sitemap only after uncommenting corresponding professions in professions.js -->
 </urlset>
